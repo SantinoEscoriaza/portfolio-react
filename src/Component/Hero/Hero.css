@@ -1,0 +1,38 @@
+.hero{
+    display: flex;
+    justify-content: space-between;
+}
+.divHero{
+    padding: 60px 120px 0px 120px;
+}
+h1{
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 60px;
+}
+.descripcion{
+    color: #59514f;
+    margin-bottom: 60px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.imgFondoHero{
+    width: 35%;
+    height: 100%;
+}
+    /* // BOTON ROJO // */
+.botonRojo{
+    padding: 14px 60px;
+    border: 1px solid var(--primary-color);
+    border-radius: 2px;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s, background-color 0.3s;
+}
+.botonRojo:hover{
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    cursor: pointer;
+}
