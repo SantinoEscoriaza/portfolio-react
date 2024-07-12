@@ -9,6 +9,7 @@ import Skills from './Component/Skills/Skills.jsx'
 import Proyects from './Component/Proyects/Proyects.jsx'
 import Testimonios from './Component/Testimonios/Testimonios.jsx'
 import Contact from './Component/Contact/Contact.jsx'
+import Footer from './Component/Footer/Footer.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -19,5 +20,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Proyects />
     <Testimonios />
     <Contact />
+    <Footer />
   </React.StrictMode>,
 )
