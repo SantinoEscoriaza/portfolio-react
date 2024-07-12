@@ -1,0 +1,62 @@
+.testimonios{
+    padding: 50px 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 55px;
+}
+.testimonios h2{
+    padding-left: 40px;
+    text-align: left;
+}
+    /* // TEXTO // */
+.TestContainer{
+    width: 40%;
+}
+.testimonio{
+    margin: 0;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 22px;
+}
+.nombreCeo{
+    width: 100%;
+    text-align: end;
+    font-weight: 500;
+    font-style: normal;
+}
+    /* // IMAGEN // */
+.imgCeoContainer{
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border: solid 1px var(--primary-color);
+    box-shadow: -35px 25px black;
+}
+.ceoFoto{
+    width: 300px;
+}
+    /* // NAVEGADOR // */
+.selectores{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.selecTestimonio{
+    width: 45px;
+    margin: 0;
+    border: solid 1px gray;
+}
+.selecTestimonio:hover{
+    cursor: pointer;
+    border: solid 1px var(--primary-color);
+}
+.botonSelect{
+    padding: 5px 10px;
+}
+.selected{
+    border: solid 1px var(--primary-color);
+}

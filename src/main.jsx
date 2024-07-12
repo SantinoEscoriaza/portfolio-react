@@ -7,6 +7,7 @@ import Hero from './Component/Hero/Hero.jsx'
 import About from './Component/About/About.jsx'
 import Skills from './Component/Skills/Skills.jsx'
 import Proyects from './Component/Proyects/Proyects.jsx'
+import Testimonios from './Component/Testimonios/Testimonios.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -15,5 +16,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <About />
     <Skills />
     <Proyects />
+    <Testimonios />
   </React.StrictMode>,
 )
