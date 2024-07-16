@@ -1,5 +1,5 @@
 .skills{
-    padding: 50px 100px;
+    padding: 80px 100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -16,7 +16,7 @@
 }
     /* // DIVISION SKILL // */
 .skillSec{
-    width: 30%;
+    width: 28%;
     padding: 15px 20px;
     margin: 0px 5px 10px 5px;
     display: flex;

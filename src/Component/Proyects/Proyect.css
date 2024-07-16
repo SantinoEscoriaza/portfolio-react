@@ -1,6 +1,6 @@
 .portfolio{
     height: 100%;
-    padding: 100px 120px 40px 120px;
+    padding: 120px 120px 40px 120px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -12,7 +12,7 @@
     padding-bottom: 60px;
     display: flex;
     justify-content: space-around;
-    align-items: flex-end;
+    align-items: center;
 }
 .portfolio-content p{
     width: 32%;
@@ -32,29 +32,29 @@
     justify-content: space-between;
     flex-wrap: wrap;
     border: solid 1px rgba(0, 0, 0, 0);
+    color: var(--bg-color-1);
+    text-decoration: none;
     transition: border 0.3s;
 }
 .proyecto:hover{
     border: solid 1px var(--bg-color-1);
+    color: var(--primary-color);
 }
 .proyecto img{
     height: 100%;
-    width: 40%;
+    width: 45%;
 }
 .proyect-content{
     width: 40%;
     padding: 35px 15px 10px 15px;
 }
 .proyect-content h3{
+    color: var(--bg-color-1);
     margin: 0;
 }
-.verProyecto{
-    color: var(--bg-color-1);
+.proyect-content > span{
     text-decoration: underline;
-    transition: color 0.2s;
-}
-.verProyecto:hover{
-    color: var(--primary-color);
+    text-underline-offset: 8px;
     font-weight: 500;
 }
     /* // SELECTORES PARA CELULAR // */

@@ -12,8 +12,8 @@ const About = () => {
             <p class="descripcion">Estoy capacitado en el desarrollo de sitios web desde 0, manejando tecnologias de front-end y back-end que se complementan con el manejo de ciertas herramientas de diseño grafico para poder ofrecer un servicio lo mas completo</p>
         </section>
         {/* <!-- BOTONES --> */}
-        <a href=""><button class="botonRojo">Descargar CV</button></a>
-        <a href="#contactid"><button class="botonRojo">Contrátame</button></a>
+        <a href="" class="a_margin"><button class="botonRojo">Descargar CV</button></a>
+        <a href="#contactid" class="a_margin"><button class="botonRojo">Contrátame</button></a>
         {/* <!-- ICONOS --> */}
         <section class="icons">
             <a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook redSocialIcon"></i></a>

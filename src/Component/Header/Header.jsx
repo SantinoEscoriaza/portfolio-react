@@ -4,7 +4,7 @@ const Header = () => {
 
     return(
     <header class="header" id="headerid">
-            <img src="icons/logoPortfolio.svg" alt="miLogo" class="logo"/>
+            <a href="#"><img src="icons/logoPortfolio.svg" alt="miLogo" class="logo"/></a>
             <nav class="navbar">
                 <a href="#inicio">Inicio</a>
                 <a href="#aboutid">Sobre mi</a>
