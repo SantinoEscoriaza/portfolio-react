@@ -1,17 +1,21 @@
-import './Hero.css'
+import { Box, Flex, Img, Text, Button } from '@chakra-ui/react'
 
 const Hero = () => {
 
 
     return(
-        <section class="hero" id="inicio">
-            <section class="divHero">
-                <h1>Hola! Soy Santino Escoriaza</h1>
-                <p class="descripcion">Soy estudiante de programación y en esta página encontrarás todo lo que necesitas saber sobre mi desempeño en la programación, mis proyectos y mis redes sociales.</p>
-                <a href=""><button class="botonRojo">Descargar CV</button></a>
-            </section>
-            <img src="img/imgFondoHero.png" alt="Imagen de presentacion" class="imgFondoHero"/>
-        </section>
+        <Flex as='section' id="inicio" justify='space-between'>
+            <Box p='60px 120px 0px 120px'>
+                <Text as='h1' fontSize='48px' fontWeight='500' lineHeight='60px'>Hola! Soy Santino Escoriaza</Text>
+                <Text className="defaultText">Soy estudiante de programación y en esta página encontrarás todo lo que necesitas saber sobre mi desempeño en la programación, mis proyectos y mis redes sociales.</Text>
+                <Button id="redButton">Descargar CV</Button>
+            </Box>
+            <Img src="./img/imgFondoHero.png" 
+            alt="Imagen de presentacion" 
+            display={{ base:'none', md:'block'}}
+            w='35%'
+            h='100%'/>
+        </Flex>
     )
 }
 

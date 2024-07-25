@@ -61,7 +61,7 @@ const Header = () => {
             <Button 
             display={{ base:'block', md:'none'}}
             m='0px 60px' p='5px 15px'
-            color='var(--secondary-color)'
+            color='#ffffff'
             bgColor='transparent'
             border='solid 1px var(--secondary-color)'
             borderRadius='border-radius: 4px'
