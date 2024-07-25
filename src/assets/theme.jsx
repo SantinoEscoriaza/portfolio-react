@@ -22,6 +22,13 @@ const breakpoints = {
 // Estilos globales / reutilizables
 const styles = {
   global: {
+    h2: {
+      width: '100%',
+      m: '40px 0px',
+      fontSize: '48px',
+      fontWeight: 500,
+      textAlign: 'center'
+    },
     '.defaultText': {
         color: '#59514f',
         mb: '60px',
@@ -42,6 +49,23 @@ const styles = {
           bgColor: '#ffffff',
           cursor: 'pointer'
         }
+    },
+    '.icons':{
+      w: '100%',
+      p: '30px 0px',
+      display: 'flex',
+      'justify-content': 'center',
+      'align-items': 'center',
+      gap: '30px',
+    },
+    '.icons > a':{
+      color: '#000000',
+      fontSize: '20px',
+      textDecoration: 'none',
+      transition: '0.3s',
+      _hover:{
+        color:'#f92139'
+      }
     }
 }}
 
