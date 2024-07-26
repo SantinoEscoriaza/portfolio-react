@@ -7,7 +7,7 @@ const ReusableSkill = ({name, img, descripcion}) => {
 
     return(
         <>
-            {/* <!-- HTML SKILL --> */}
+            {/* // CONTENEDOR // */}
             <Flex as='section'
             w='28%' p={'15px 20px'} m={'0px 5px 15px 5px'}
             direction='column' justify='center' alignItems='center'
@@ -17,6 +17,7 @@ const ReusableSkill = ({name, img, descripcion}) => {
             _hover={{
                 border:'1px solid #f92139'
             }}>
+                {/* // CONTENEDOR DEL LOGO // */}
                 <Box as='container'
                 w='fit-content'
                 p='12px 12px'
@@ -24,6 +25,7 @@ const ReusableSkill = ({name, img, descripcion}) => {
                 borderRadius='50%'>
                     <Img w='80px' src={img} alt="skillLogo"/>
                 </Box>
+                {/* // TITULO // */}
                 <Text as='h3' fontSize='30px' m='10px 0px'>
                     {name}
                 </Text>
