@@ -1,14 +1,24 @@
-import './Footer.css'
+import { Button, Flex, Img, Link, Text } from "@chakra-ui/react"
 
 const Footer = () => {
 
 
     return(
-        <footer class="footer">
-            <a href="#"><img src="icons/logoPortfolio.svg" alt="miLogo" class="logo"/></a>
-            <p>© Todos los derechos reservados | 2024</p>
-            <a href="#headerid"><button class="botonVolver"><i class="bi bi-arrow-up"></i></button></a>
-        </footer>
+        <Flex as='footer' justify='space-around' align='center' bgColor='#000000' color='#ffffff' fontSize='16px' h='120px'>
+            <Link href="#"><Img w='50px' src="icons/logoPortfolio.svg" alt="miLogo"/></Link>
+            <Text>© Todos los derechos reservados | 2024</Text>
+            <Link href="#headerid">
+                <Button p='8px' 
+                border='1px solid #ffffff' 
+                borderRadius='2px' 
+                color='#ffffff' 
+                bgColor='#000000' 
+                _hover={{
+                    color:'#000000',
+                    bgColor:'#ffffff'
+                }}><i class="bi bi-arrow-up"></i></Button>
+            </Link>
+        </Flex>
     )
 }
 
