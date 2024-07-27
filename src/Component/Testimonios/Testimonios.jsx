@@ -1,29 +1,35 @@
-import './Testimonios.css'
+import { Wrap, Text } from '@chakra-ui/react'
+import ReusableTestimonio from './reusableTestimonio.jsx'
 
 const Testimonios = () => {
 
 
     return(
-        <section class="testimonios" id="testimoniosid">
-            {/* <!-- // CONTENEDOR CON IMAGEN // --> */}
-            <section class="imgCeoContainer">
-                <img src="img/jackPearson.jpg" alt="ceoNombre" class="ceoFoto"/>
-            </section>
-            {/* <!-- // CONTENEDOR DE TEXTO // --> */}
-            <section class="TestContainer">
-                <h2>Testimonios</h2>
-                <p class="descripcion testimonio">"Su incorporación al equipo de trabajo fue todo un cambio de perspectiva. Más allá de su aporte personal, Santino hizo que el equipo trabaje de manera más eficaz, al ayudarles a hacer mejor foco en cada pequeño detalle y llegar a resultados no solo mejores visualmente, sino realizados de manera más ordenada."</p>
-                <p class="nombreCeo">Jack Pearson</p>
-            {/* <!-- // SELECTORES DE TESTIMONIO // --> */}
-                <div class="selectores">
-                    <button class="botonRojo botonSelect"><i class="bi bi-arrow-left"></i></button>
-                    <hr class="selecTestimonio selected"></hr>
-                    <hr class="selecTestimonio"></hr>
-                    <hr class="selecTestimonio"></hr>
-                    <button class="botonRojo botonSelect"><i class="bi bi-arrow-right"></i></button>
-                </div>
-            </section>
-        </section>
+        // TESTIMONIOS. Leer ReadMe //
+        <Wrap as='section' id="testimoniosid"
+            p='50px 100px'
+            justify='space-between'
+            align='center'>
+
+            <Text as='h2'>Testimonios</Text>
+            
+            <ReusableTestimonio
+            name='Jack Pearson'
+            image='img/jackPearson.jpg'
+            testimonio='"Su incorporación al equipo de trabajo fue todo un cambio de perspectiva. Santino hizo que el equipo trabaje de manera más eficaz."'/>
+            <ReusableTestimonio 
+            name='Jack Pearson'
+            image='img/jackPearson.jpg'
+            testimonio='"Su incorporación al equipo de trabajo fue todo un cambio de perspectiva. Santino hizo que el equipo trabaje de manera más eficaz."'/>
+            <ReusableTestimonio 
+            name='Jack Pearson'
+            image='img/jackPearson.jpg'
+            testimonio='"Su incorporación al equipo de trabajo fue todo un cambio de perspectiva. Santino hizo que el equipo trabaje de manera más eficaz."'/>
+            <ReusableTestimonio 
+            name='Jack Pearson'
+            image='img/jackPearson.jpg'
+            testimonio='"Su incorporación al equipo de trabajo fue todo un cambio de perspectiva. Santino hizo que el equipo trabaje de manera más eficaz."'/>
+        </Wrap>
     )
 }
 
