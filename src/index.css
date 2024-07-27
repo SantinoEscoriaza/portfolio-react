@@ -12,21 +12,3 @@
 html{
     scroll-behavior: smooth;
 }
-/* // ICONOS // */
-    /* .icons{
-        width: 100%;
-        padding: 30px 0px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-    }
-    .icons a{
-        color: var(--bg-color-1);
-        font-size: 18px;
-        text-decoration: none;
-        transition: color 0.3s;
-    }
-    .icons a:hover{
-        color: var(--primary-color);
-    } */
