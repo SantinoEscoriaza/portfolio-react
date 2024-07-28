@@ -16,7 +16,7 @@ const Footer = () => {
                 _hover={{
                     color:'#000000',
                     bgColor:'#ffffff'
-                }}><i class="bi bi-arrow-up"></i></Button>
+                }}><i className="bi bi-arrow-up"></i></Button>
             </Link>
         </Flex>
     )

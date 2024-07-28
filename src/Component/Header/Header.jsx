@@ -20,7 +20,7 @@ const Header = () => {
         p={'26px 0px'} 
         justify={{base:'space-between', md:'center'}} 
         align='center' 
-        bgColor='var(--bg-color-1)' 
+        bgColor='#000000' 
         id="headerid"
         color='white'>
             {/* /// LOGO /// */}
@@ -45,14 +45,14 @@ const Header = () => {
             <Button
             display={{ base:'none', md:'block'}}
             p='8px 36px'
-            border='1px solid var(--secondary-color)'
+            border='1px solid #ffffff'
             borderRadius='2px'
             color='white'
-            bgColor='rgba(0,0,0,0)'
+            bgColor='transparent'
             transition='0.5s'
             _hover={{
-                color:'var(--bg-color-1)',
-                bgColor:'rgba(256, 256, 256, 1)',
+                color:'#000000',
+                bgColor:'#ffffff',
                 cursor:'pointer'
                 }}>
                     Contrátame
@@ -63,14 +63,14 @@ const Header = () => {
             m='0px 60px' p='5px 15px'
             color='#ffffff'
             bgColor='transparent'
-            border='solid 1px var(--secondary-color)'
+            border='solid 1px #ffffff'
             borderRadius='border-radius: 4px'
             transition='0.3s'
             _hover={{
-                color:'var(--primary-color)',
-                border:'solid 1px var(--primary-color)'
+                color:'#f92139',
+                border:'solid 1px #f92139'
                 }}>
-                    <i class="bi bi-three-dots"></i>
+                    <i className="bi bi-three-dots"></i>
             </Button>
     </Flex>
     )

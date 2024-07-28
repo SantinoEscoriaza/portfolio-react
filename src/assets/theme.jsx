@@ -22,6 +22,12 @@ const breakpoints = {
 // Estilos globales / reutilizables
 const styles = {
   global: {
+    '*':{
+      fontFamily:"system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"
+    },
+    html:{
+      scrollBehavior:'smooth'
+    },
     h2: {
       width: '100%',
       m: '40px 0px',

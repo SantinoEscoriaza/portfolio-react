@@ -38,12 +38,12 @@ const Contact = () => {
             <Flex w='30%' direction='column' gap='12%'>
                 <Link href="https://www.gmail.com" target="_blank" _hover={{textDecoration:'none'}}>
                 <Button sx={botonContact}>
-                    <i class="bi bi-envelope-fill"></i>
+                    <i className="bi bi-envelope-fill"></i>
                     <Text>santinoescoriaza@gmail.com</Text>
                 </Button></Link>
                 <Link href="https://www.whatsapp.com" target="_blank" _hover={{textDecoration:'none'}}>
                 <Button sx={botonContact}>
-                    <i class="bi bi-telephone-fill"></i>
+                    <i className="bi bi-telephone-fill"></i>
                     (+54) 261-264-1158
                 </Button></Link>
              </Flex>
@@ -64,7 +64,7 @@ const Contact = () => {
                         <Link as='a' href="https://www.instagram.com" target="_blank"><i className="bi bi-instagram"></i></Link>
                         <Link as='a' href="https://www.x.com" target="_blank"><i className="bi bi-twitter"></i></Link>
                         <Link as='a' href="https://www.linkedin.com/in/santino-escoriaza-6833b8311/" target="_blank"><i className="bi bi-linkedin"></i></Link>
-                        <Link as='a' href="https://github.com/SantinoEscoriaza/" target="_blank"><i class="bi bi-github"></i></Link>
+                        <Link as='a' href="https://github.com/SantinoEscoriaza/" target="_blank"><i className="bi bi-github"></i></Link>
                     </Flex>
             </FormControl>
         </Wrap>
