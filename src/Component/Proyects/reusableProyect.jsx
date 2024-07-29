@@ -7,7 +7,7 @@ const ReusableProyect = ({name, desc, url, image}) => {
     return(
         // CONTENEDOR / LINK AL PROYECTO //
         <Link display='flex' 
-        w='49%' h='100%'  
+        w={{base:'100%', md:'49%'}} h='100%'  
         justifyContent='space-between' 
         flexWrap='wrap' 
         border='1px solid transparent' 
@@ -19,7 +19,7 @@ const ReusableProyect = ({name, desc, url, image}) => {
         }}
         href={url} 
         target="_blank">
-                <Box w='45%' p='15px 15px 20px 25px'>
+                <Box w={{base:'100%', mid:'45%'}} p='15px 15px 20px 25px'>
                     <Text as='h3' 
                     color='#000000'  
                     fontWeight='500' 
@@ -27,10 +27,13 @@ const ReusableProyect = ({name, desc, url, image}) => {
                     mb='12px'>
                         {name}
                     </Text>
-                    <Text className="defaultText" fontSize='16px' mb='70px'>{desc}</Text>
+                    <Text className="defaultText" fontSize='16px' mb={{base:'20px', lg:'30px', xl:'70px'}}>{desc}</Text>
                     <Text as='span' textDecoration='underline' textUnderlineOffset='8px' fontWeight='500'>Ver proyecto</Text>
                 </Box>
-                <Img w='50%' h='100%' src={image} alt="proyect-img"/>
+                <Img src={image}
+                w={{base:'40%', md:'50%'}} h='100%' 
+                display={{base:'none', mid:'block'}}
+                alt="proyect-img"/>
         </Link>
     )
 }

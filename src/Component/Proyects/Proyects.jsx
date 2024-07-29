@@ -7,7 +7,7 @@ const Proyects = () => {
     return(
         // CONTENEDOR PRINCIPAL //
         <Wrap id="portfolioid" h='100%'
-        p='100px 120px 30px 120px'
+        p={{base:'50px 30px', mid:'80px 30px', lg:'100px 100px 30px'}}
         justify='space-between'>
 
             {/* CONTENEDOR TEXTOS Y BOTON SUPERIOR */}
@@ -15,9 +15,19 @@ const Proyects = () => {
             w='100%' h='100%'
             pb='60px'
             justify='space-around'
-            align='center'>
-                <Text as='h2' w='40%' m='0' textAlign='left'>Échale un vistazo a mis proyectos</Text>
-                <Text className="defaultText" w='32%' m='0px 50px 0px 20px' textAlign='justify'>
+            align='center'
+            wrap={{base:'wrap', lg:'nowrap'}}>
+                <Text as='h2' 
+                w={{base:'100%', md:'48%', lg:'40%'}} 
+                m={{base:'0px 0px 16px', lg:'0'}}
+                textAlign='left'
+                lineHeight={{base:'48px',mid:'64px', lg:'default'}}>
+                    Échale un vistazo a mis proyectos
+                </Text>
+                <Text className="defaultText" 
+                w={{base:'100%',md:'50%', lg:'32%'}} 
+                m={{base:'0px 10px 20px 0px', lg:'0px 50px 0px 20px'}} 
+                textAlign='justify'>
                     Estos son algunos ejemplos de proyectos que he desarrollado. Revisandolos podrás entender mejor la forma en la que trabajo el código y los resultados alcanzados
                 </Text>
                 <Link href="https://github.com/SantinoEscoriaza" target="_blank">
