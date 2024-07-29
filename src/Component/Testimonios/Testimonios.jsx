@@ -7,7 +7,7 @@ const Testimonios = () => {
     return(
         // TESTIMONIOS. Leer ReadMe //
         <Wrap as='section' id="testimoniosid"
-            p='50px 100px'
+            p={{base:'40px 50px 0px' ,lg:'50px 100 0px'}}
             justify='space-between'
             align='center'>
 
