@@ -31,7 +31,7 @@ const styles = {
     h2: {
       width: '100%',
       m: '40px 0px',
-      fontSize: '48px',
+      fontSize: {base:'36px',mid:'48px'},
       fontWeight: 500,
       textAlign: 'center'
     },
