@@ -7,7 +7,7 @@ const Skills = () => {
 
     return(
         <Flex as='section' id="skillsid"
-        p={'80px 100px'}
+        p={{base:'60px 40px', lg:'80px 60px'}}
         wrap='wrap'
         justify='center'
         color='#ffffff'
