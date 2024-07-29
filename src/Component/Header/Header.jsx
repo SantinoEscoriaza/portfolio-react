@@ -24,7 +24,7 @@ const Header = () => {
         id="headerid"
         color='white'>
             {/* /// LOGO /// */}
-            <Link m={{base:'0px 60px', md:'0px'}} href="#">
+            <Link ml='60px' href="#">
                 <Img src='./icons/logoPortfolio.svg' alt="miLogo" w='50px'/>
             </Link>
             {/* /// NAVBAR /// */}
@@ -60,7 +60,7 @@ const Header = () => {
         {/* /// BOTON MENU SANDWICH PARA CELULARES /// */}
             <Button 
             display={{ base:'block', md:'none'}}
-            m='0px 60px' p='5px 15px'
+            mr='60px' p='5px 15px'
             color='#ffffff'
             bgColor='transparent'
             border='solid 1px #ffffff'

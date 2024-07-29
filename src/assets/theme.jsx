@@ -38,16 +38,16 @@ const styles = {
     '.defaultText': {
         color: '#59514f',
         mb: '60px',
-        fontSize: '18px',
+        fontSize: {base:'16px', mid:'18px'},
         fontWeight: '500'
     },
     '#redButton':{
-        p: '24px 60px',
+        p: {base:'20px 40px', mid:'24px 60px'},
         border: '1px solid #f92139',
         borderRadius: '2px',
         color: '#ffffff',
         bgColor: '#f92139',
-        fontSize: '16px',
+        fontSize: {base:'14px', mid:'16px'},
         fontWeight: '500',
         transition: '0.3s',
         _hover:{
