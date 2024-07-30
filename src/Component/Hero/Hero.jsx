@@ -4,7 +4,9 @@ const Hero = () => {
 
 
     return(
-        <Flex as='section' id="inicio" justify='space-between'>
+        <Flex as='section' id="inicio" 
+        justify='space-between' 
+        pt='80px'>
             <Box as='section' p={{
                 base:'10px 30px 10px 40px',
                 sm:'20px 50px 20px 50px',

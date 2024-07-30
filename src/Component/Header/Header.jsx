@@ -1,5 +1,6 @@
 
 import { Button, Flex, Link, Img } from "@chakra-ui/react"
+import { MenuBoton } from "./MenuBoton.jsx"
 
 const Header = () => {
 
@@ -17,7 +18,10 @@ const Header = () => {
     return(
     /// HEADER ///
     <Flex as='header' 
-        p={'26px 0px'} 
+        position='fixed'
+        w='100%'
+        zIndex='1'
+        p='16px 0px' 
         justify={{base:'space-between', md:'center'}} 
         align='center' 
         bgColor='#000000' 
@@ -58,20 +62,7 @@ const Header = () => {
                     Contrátame
             </Button>
         {/* /// BOTON MENU SANDWICH PARA CELULARES /// */}
-            <Button 
-            display={{ base:'block', md:'none'}}
-            mr='60px' p='5px 15px'
-            color='#ffffff'
-            bgColor='transparent'
-            border='solid 1px #ffffff'
-            borderRadius='border-radius: 4px'
-            transition='0.3s'
-            _hover={{
-                color:'#f92139',
-                border:'solid 1px #f92139'
-                }}>
-                    <i className="bi bi-three-dots"></i>
-            </Button>
+            <MenuBoton/>
     </Flex>
     )
 }
