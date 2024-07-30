@@ -5,12 +5,12 @@ const Contact = () => {
     const botonContact={
         display: 'flex',
         flexDirection: 'column',
-        width: '90%',
+        width: '100%',
         padding: '50px 0',
         bgColor:'#ffffff',
         border: 'solid 1px transparent',
         borderRadius: '2px',
-        fontSize: '20px',
+        fontSize: {base:'16px', md:'20px'},
         fontWeight: '500',
         transition:'0.3s',
         _hover:{
@@ -31,33 +31,52 @@ const Contact = () => {
 
     return(
         <Wrap as='section' id="contactid"
-        h='100%' p='90px 100px'
+        h='100%' p={{base:'60px 20px',  lg:'90px 100px'}}
         justify='center'>
             <Text as ='h2' pb='20px'>Ponte En Contacto</Text>
+            
             {/* <!-- BOTONES CONTACTO --> */}
-            <Flex w='30%' direction='column' gap='12%'>
-                <Link href="https://www.gmail.com" target="_blank" _hover={{textDecoration:'none'}}>
+            <Flex w={{base:'100%', md:'40%'}} 
+            direction={{base:'column', mid:'row', md:'column'}} 
+            align='center' 
+            gap='12%' 
+            pr={{base:'0px', md:'16px'}}>
+
+                <Link href="https://www.gmail.com" target="_blank" 
+                w={{base:'80%', mid:'45%', md:'90%'}} 
+                _hover={{textDecoration:'none'}}>
                 <Button sx={botonContact}>
                     <i className="bi bi-envelope-fill"></i>
-                    <Text>santinoescoriaza@gmail.com</Text>
+                    santinoescoriaza@gmail.com
+
                 </Button></Link>
-                <Link href="https://www.whatsapp.com" target="_blank" _hover={{textDecoration:'none'}}>
+
+
+                <Link href="https://www.whatsapp.com" target="_blank" 
+                w={{base:'80%', mid:'45%', md:'90%'}} 
+                _hover={{textDecoration:'none'}}>
+                    
                 <Button sx={botonContact}>
                     <i className="bi bi-telephone-fill"></i>
                     (+54) 261-264-1158
+                    
                 </Button></Link>
+
              </Flex>
+
             {/* <!-- FORMULARIO CONTACTO --> */}
             <FormControl action="" 
             display='flex' 
             flexWrap='wrap' 
             justifyContent='space-between'
-            w='50%' h='100%'>
+            w={{base:'100%', md:'50%'}} h='100%'>
+
                 <Input type="text" placeholder="Tu nombre" name="nombre" sx={textInput} w='49%'/>
                 <Input type="text" placeholder="Tu email" name="mail" sx={textInput} w='49%'/>
                 <Input type="text" placeholder="Asunto" name="asunto" sx={textInput} w='100%'/>
                 <Textarea placeholder="Mensaje" name="mensaje" sx={textInput} w='100%' h='120px' resize='none'/>
                 <Button id='redButton' p='20px 0' w='100%' mt='20px'>Enviar mensaje</Button>
+
                     {/* <!-- ICONOS --> */}
                     <Flex className="icons">
                         <Link as='a' href="https://www.facebook.com" target="_blank"><i className="bi bi-facebook"></i></Link>
@@ -66,6 +85,7 @@ const Contact = () => {
                         <Link as='a' href="https://www.linkedin.com/in/santino-escoriaza-6833b8311/" target="_blank"><i className="bi bi-linkedin"></i></Link>
                         <Link as='a' href="https://github.com/SantinoEscoriaza/" target="_blank"><i className="bi bi-github"></i></Link>
                     </Flex>
+                    
             </FormControl>
         </Wrap>
     )
