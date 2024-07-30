@@ -1,6 +1,24 @@
 import { Wrap, Text, Flex, Link, Button, Input, Textarea, FormControl } from '@chakra-ui/react'
+import { Formik } from 'formik'
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+            /*/////////////////////////
+                    LEER README 
+            /////////////////////////*/
+    const form = useRef();
+    const sendEmail = () => {
+        emailjs.sendForm('service_mihheud','template_ql1lhzb',form.current,'MDi0-I9sD9dcf6jU')
+        .then(
+          () => {
+            console.log('SUCCESS');
+          },
+          (error) => {
+            console.log('FAILED...', error.text);
+          }
+        );
+    };
 
     const botonContact={
         display: 'flex',
@@ -43,7 +61,7 @@ const Contact = () => {
             gap='12%' 
             pr={{base:'0px', md:'16px'}}>
 
-                <Link href="https://www.gmail.com" target="_blank" 
+                <Link href="mailto:santinoescoriaza@gmail.com" target="_blank" 
                 w={{base:'80%', mid:'45%', md:'90%'}} 
                 _hover={{textDecoration:'none'}}
                 mb='18px'>
@@ -54,7 +72,7 @@ const Contact = () => {
                 </Button></Link>
 
 
-                <Link href="https://www.whatsapp.com" target="_blank" 
+                <Link href="https://wa.link/02wmyp" target="_blank" 
                 w={{base:'80%', mid:'45%', md:'90%'}} 
                 _hover={{textDecoration:'none'}}
                 mb='18px'>
@@ -68,28 +86,48 @@ const Contact = () => {
              </Flex>
 
             {/* <!-- FORMULARIO CONTACTO --> */}
-            <FormControl action="" 
-            display='flex' 
-            flexWrap='wrap' 
-            justifyContent='space-between'
-            w={{base:'100%', md:'50%'}} h='100%'>
+            {/* ///////////////////// 
+                    LEER README 
+            ///////////////////// */}
+            <Formik initialValues={{
+                from_name:'',
+                user_email:'',
+                to_name:'',
+                message:''
+            }}
+            onSubmit={(values, { setSubmitting }) => {
+                sendEmail(values);
+                setSubmitting(false);
+              }}>
+            {({
+                values,
+                handleChange, 
+                handleSubmit,
+            })=>(
+                <FormControl ref={form} action="" onSubmit={handleSubmit}
+                display='flex' 
+                flexWrap='wrap' 
+                justifyContent='space-between'
+                w={{base:'100%', md:'50%'}} h='100%'>
 
-                <Input type="text" placeholder="Tu nombre" name="nombre" sx={textInput} w='49%'/>
-                <Input type="text" placeholder="Tu email" name="mail" sx={textInput} w='49%'/>
-                <Input type="text" placeholder="Asunto" name="asunto" sx={textInput} w='100%'/>
-                <Textarea placeholder="Mensaje" name="mensaje" sx={textInput} w='100%' h='120px' resize='none'/>
-                <Button id='redButton' p='20px 0' w='100%' mt='20px'>Enviar mensaje</Button>
+                    <Input type="text" placeholder="Tu nombre" name="from_name" sx={textInput} w='49%' value={values.from_name} onChange={handleChange}/>
+                    <Input type="text" placeholder="Tu email" name="user_email" sx={textInput} w='49%' value={values.user_email} onChange={handleChange}/>
+                    <Input type="text" placeholder="Asunto" name="to_name" sx={textInput} w='100%' value={values.to_name} onChange={handleChange}/>
+                    <Textarea placeholder="Mensaje" name="message" sx={textInput} w='100%' h='120px' resize='none' value={values.message} onChange={handleChange}/>
+                    <Button type='submit' id='redButton' p='20px 0' w='100%' mt='20px'>Enviar mensaje</Button>
 
-                    {/* <!-- ICONOS --> */}
-                    <Flex className="icons">
-                        <Link as='a' href="https://www.facebook.com" target="_blank"><i className="bi bi-facebook"></i></Link>
-                        <Link as='a' href="https://www.instagram.com" target="_blank"><i className="bi bi-instagram"></i></Link>
-                        <Link as='a' href="https://www.x.com" target="_blank"><i className="bi bi-twitter"></i></Link>
-                        <Link as='a' href="https://www.linkedin.com/in/santino-escoriaza-6833b8311/" target="_blank"><i className="bi bi-linkedin"></i></Link>
-                        <Link as='a' href="https://github.com/SantinoEscoriaza/" target="_blank"><i className="bi bi-github"></i></Link>
-                    </Flex>
+                        {/* <!-- ICONOS --> */}
+                        <Flex className="icons">
+                            <Link as='a' href="https://www.facebook.com" target="_blank"><i className="bi bi-facebook"></i></Link>
+                            <Link as='a' href="https://www.instagram.com" target="_blank"><i className="bi bi-instagram"></i></Link>
+                            <Link as='a' href="https://www.x.com" target="_blank"><i className="bi bi-twitter"></i></Link>
+                            <Link as='a' href="https://www.linkedin.com/in/santino-escoriaza-6833b8311/" target="_blank"><i className="bi bi-linkedin"></i></Link>
+                            <Link as='a' href="https://github.com/SantinoEscoriaza/" target="_blank"><i className="bi bi-github"></i></Link>
+                        </Flex>
 
-            </FormControl>
+                </FormControl>
+            )}
+            </Formik>
         </Wrap>
     )
 }

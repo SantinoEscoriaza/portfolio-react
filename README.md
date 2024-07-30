@@ -19,6 +19,10 @@ El proyecto consiste en migrar el codigo del [mismo portfolio personal](https://
 ### Seccion de testimonios
 - La seccion de testimonios sufrió un cambio total respecto a la original, enfocandose en lo mencionado en el punto anterior acerca de la primer impresión que damos en nuestro portfolio. Tambien se aclara que el contenido de esta sección es generico y está colocado para representar como se ve la sección.
 
+### Seccion de contacto. Problemas con EmailJS y Formik
+- No pude lograr que se integre apropiadamente EmailJS con Formik. Idealmente, el formulario deberia enviar el email con la template creada en EmailJS, y habría que agregarle con Formik o Yup validaciones para que el formulario sea usado correctamente por el usuario (que no deje campos vacios, agregue espacios, etc.). Sin embargo, considere que no tenia sentido continuar con esto ya que de todas maneras no logro solucionar el problema de que EmailJS no se conecta con la pagina y mucho menos envia el email como deberia
+- Por otro lado, los botones de contacto funcionan parcialmente. El boton que corresponde al número de celular funciona como se espera, con un link de "wa.me" que te redirige a Whatsapp para chatear al número. El boton del correo funciona pero no de la manera más efectiva, ya que el uso de "mailto:" no me parece tan atractivo. Mi idea original era que este boton abra el gmail del usuario (teniendo en cuenta que tenga uno) y directamente le cree un nuevo mail con mi correo como destino. Sin embargo, no encontré por ningun lado algun tipo de api de gmail o herramienta que me permita lograr esto, asique opte por dejar el mailto para que al menos el boton tenga una finalidad
+
 <hr>
 
 Recomiendo ampliamente visitar el [proyecto original](https://github.com/SantinoEscoriaza/mi-portfolio), particularmente leer el Read Me adjunto y revisar el proyecto para corroborar cualquier cambio realizado.
