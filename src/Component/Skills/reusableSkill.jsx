@@ -25,11 +25,11 @@ const ReusableSkill = ({name, img, descripcion}) => {
                 {/* // CONTENEDOR DEL LOGO // */}
                 <Box as='container'
                 w='fit-content'
-                p='12px 12px'
+                p={{base:'6px 6px', md:'12px 12px'}}
                 m={{base:'0px 30px 10px 0px', md:'0'}}
                 border='1px solid #ffffff'
                 borderRadius='50%'>
-                    <Img w='80px' src={img} alt="skillLogo"/>
+                    <Img w={{base:'30px', mid:'50px', md:'70px', lg:'80px'}} src={img} alt="skillLogo"/>
                 </Box>
                 {/* // TITULO // */}
                 <Text as='h3' fontSize='30px' m='10px 0px'>

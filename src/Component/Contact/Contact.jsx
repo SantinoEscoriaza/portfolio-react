@@ -37,14 +37,16 @@ const Contact = () => {
             
             {/* <!-- BOTONES CONTACTO --> */}
             <Flex w={{base:'100%', md:'40%'}} 
-            direction={{base:'column', mid:'row', md:'column'}} 
+            direction={{base:'column', mid:'row', md:'column'}}
+            h='fit-content'
             align='center' 
             gap='12%' 
             pr={{base:'0px', md:'16px'}}>
 
                 <Link href="https://www.gmail.com" target="_blank" 
                 w={{base:'80%', mid:'45%', md:'90%'}} 
-                _hover={{textDecoration:'none'}}>
+                _hover={{textDecoration:'none'}}
+                mb='18px'>
                 <Button sx={botonContact}>
                     <i className="bi bi-envelope-fill"></i>
                     santinoescoriaza@gmail.com
@@ -54,7 +56,8 @@ const Contact = () => {
 
                 <Link href="https://www.whatsapp.com" target="_blank" 
                 w={{base:'80%', mid:'45%', md:'90%'}} 
-                _hover={{textDecoration:'none'}}>
+                _hover={{textDecoration:'none'}}
+                mb='18px'>
                     
                 <Button sx={botonContact}>
                     <i className="bi bi-telephone-fill"></i>
@@ -85,7 +88,7 @@ const Contact = () => {
                         <Link as='a' href="https://www.linkedin.com/in/santino-escoriaza-6833b8311/" target="_blank"><i className="bi bi-linkedin"></i></Link>
                         <Link as='a' href="https://github.com/SantinoEscoriaza/" target="_blank"><i className="bi bi-github"></i></Link>
                     </Flex>
-                    
+
             </FormControl>
         </Wrap>
     )

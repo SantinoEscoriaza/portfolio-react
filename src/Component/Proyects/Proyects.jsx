@@ -6,7 +6,7 @@ const Proyects = () => {
 
     return(
         // CONTENEDOR PRINCIPAL //
-        <Wrap id="portfolioid" h='100%'
+        <Wrap as='section' id="portfolioid" h='100%'
         p={{base:'50px 30px', mid:'80px 30px', lg:'100px 100px 30px'}}
         justify='space-between'>
 

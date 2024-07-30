@@ -6,7 +6,7 @@ const Footer = () => {
     return(
         <Flex as='footer' justify='space-around' align='center' bgColor='#000000' color='#ffffff' fontSize='16px' h='120px'>
             <Link href="#"><Img w='50px' src="icons/logoPortfolio.svg" alt="miLogo"/></Link>
-            <Text>© Todos los derechos reservados | 2024</Text>
+            <Text textAlign={{base:'center', mid:'left'}} fontSize={{base:'14px', mid:'16px', md:'20px'}}>© Todos los derechos reservados | 2024</Text>
             <Link href="#headerid">
                 <Button p='8px' 
                 border='1px solid #ffffff' 
