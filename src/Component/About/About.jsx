@@ -2,6 +2,7 @@ import { Wrap, Button, Flex, Img, Link, Text } from '@chakra-ui/react'
 
 const About = () => {
 
+    const curriculumPath = '../../public/files/CurriculumEjemplo.pdf'
 
     return(
     <Wrap as='section' id="aboutid" 
@@ -25,7 +26,7 @@ const About = () => {
             </Text>
         </Text>
         {/* <!-- BOTONES --> */}
-        <Link><Button id="redButton" m='0px 10px'>Descargar CV</Button></Link>
+        <Link href={curriculumPath} download><Button id="redButton" m='0px 10px'>Descargar CV</Button></Link>
         <Link href='#contactid'><Button id="redButton" m='0px 10px'>Contrátame</Button></Link>
         {/* <!-- ICONOS --> */}
         <Flex className="icons">

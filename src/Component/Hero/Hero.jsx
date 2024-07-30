@@ -1,7 +1,8 @@
-import { Box, Flex, Img, Text, Button } from '@chakra-ui/react'
+import { Box, Flex, Img, Text, Button, Link } from '@chakra-ui/react'
 
 const Hero = () => {
 
+        const curriculumPath = '../../public/files/CurriculumEjemplo.pdf'
 
     return(
         <Flex as='section' id="inicio" 
@@ -19,7 +20,7 @@ const Hero = () => {
                 <Text className="defaultText">
                     Soy estudiante de programación y en esta página encontrarás todo lo que necesitas saber sobre mi desempeño en la programación, mis proyectos y mis redes sociales.
                 </Text>
-                <Button id="redButton">Descargar CV</Button>
+                <Link href={curriculumPath} download><Button id="redButton">Descargar CV</Button></Link>
             </Box>
             <Img src="./img/imgFondoHero.png" 
             alt="Imagen de presentacion" 
