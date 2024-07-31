@@ -30,7 +30,7 @@ const Footer = () => {
                 © Todos los derechos reservados | 2024
             </Text>
 
-            <Link href="#headerid">
+            <Link href="#inicio">
                 <Button p={{
                     base:'8px', 
                     '2xl':'10px', 
