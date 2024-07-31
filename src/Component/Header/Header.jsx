@@ -27,6 +27,7 @@ const Header = () => {
         bgColor='#000000' 
         id="headerid"
         color='white'>
+
             {/* /// LOGO /// */}
             <Link ml='60px' href="#">
                 <Img src='./icons/logoPortfolio.svg' alt="miLogo" 
@@ -36,6 +37,7 @@ const Header = () => {
                     '3xl':'70px'
                 }}/>
             </Link>
+
             {/* /// NAVBAR /// */}
             <Flex as='navbar' 
             display={{ base:'none', md:'flex'}}
@@ -50,24 +52,28 @@ const Header = () => {
                 <Link sx={linkStyles} href="#testimoniosid">Testimonios</Link>
                 <Link sx={linkStyles} href="#contactid">Contáctame</Link>
             </Flex>
+
             {/* /// CONTRATAME BUTTON /// */}
-            <Button
-            display={{ base:'none', md:'block'}}
-            p={{base:'8px 36px', '2xl':'10px 36px', '3xl':'12px 36px'}}
-            fontSize={{base:'16px', '2xl':'20px', '3xl':'26px'}}
-            h='fit-content'
-            border='1px solid #ffffff'
-            borderRadius='2px'
-            color='white'
-            bgColor='transparent'
-            transition='0.5s'
-            _hover={{
-                color:'#000000',
-                bgColor:'#ffffff',
-                cursor:'pointer'
+            <Link href='#contactid' _hover={{textDecoration:'none'}}>
+                <Button
+                textDecoration='none'
+                display={{ base:'none', md:'block'}}
+                p={{base:'8px 36px', '2xl':'10px 36px', '3xl':'12px 36px'}}
+                fontSize={{base:'16px', '2xl':'20px', '3xl':'26px'}}
+                h='fit-content'
+                border='1px solid #ffffff'
+                borderRadius='2px'
+                color='white'
+                bgColor='transparent'
+                transition='0.5s'
+                _hover={{
+                    color:'#000000',
+                    bgColor:'#ffffff',
+                    cursor:'pointer'
                 }}>
-                    Contrátame
-            </Button>
+                        Contrátame
+                </Button>
+            </Link>
         {/* /// BOTON MENU SANDWICH PARA CELULARES /// */}
             <MenuBoton/>
     </Flex>

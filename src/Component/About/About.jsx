@@ -1,8 +1,9 @@
 import { Wrap, Button, Flex, Img, Link, Text } from '@chakra-ui/react'
+import Icons from '../../assets/icons'
 
 const About = () => {
 
-    const curriculumPath = '../../public/files/CurriculumEjemplo.pdf'
+    const curriculumPath = './public/files/CurriculumEjemplo.pdf'
 
     return(
     <Wrap as='section' 
@@ -41,13 +42,7 @@ const About = () => {
         <Link href='#contactid'><Button id="redButton" m='0px 10px'>Contrátame</Button></Link>
 
         {/* <!-- ICONOS --> */}
-        <Flex className="icons">
-            <Link as='a' href="https://www.facebook.com" target="_blank"><i className="bi bi-facebook"></i></Link>
-            <Link as='a' href="https://www.instagram.com" target="_blank"><i className="bi bi-instagram"></i></Link>
-            <Link as='a' href="https://www.x.com" target="_blank"><i className="bi bi-twitter"></i></Link>
-            <Link as='a' href="https://www.linkedin.com/in/santino-escoriaza-6833b8311/" target="_blank"><i className="bi bi-linkedin"></i></Link>
-            <Link as='a' href="https://github.com/SantinoEscoriaza/" target="_blank"><i className="bi bi-github"></i></Link>
-        </Flex>
+        <Icons />
     </Wrap>
     )
 }

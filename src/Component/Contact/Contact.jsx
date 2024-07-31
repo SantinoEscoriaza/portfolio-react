@@ -2,6 +2,7 @@ import { Wrap, Text, Flex, Link, Button, Input, Textarea, FormControl } from '@c
 import { Formik } from 'formik'
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import Icons from '../../assets/icons';
 
 const Contact = () => {
             /*/////////////////////////
@@ -142,13 +143,7 @@ const Contact = () => {
                     <Button type='submit' id='redButton' p='20px 0' w='100%' mt='20px'>Enviar mensaje</Button>
 
                         {/* <!-- ICONOS --> */}
-                        <Flex className="icons">
-                            <Link as='a' href="https://www.facebook.com" target="_blank"><i className="bi bi-facebook"></i></Link>
-                            <Link as='a' href="https://www.instagram.com" target="_blank"><i className="bi bi-instagram"></i></Link>
-                            <Link as='a' href="https://www.x.com" target="_blank"><i className="bi bi-twitter"></i></Link>
-                            <Link as='a' href="https://www.linkedin.com/in/santino-escoriaza-6833b8311/" target="_blank"><i className="bi bi-linkedin"></i></Link>
-                            <Link as='a' href="https://github.com/SantinoEscoriaza/" target="_blank"><i className="bi bi-github"></i></Link>
-                        </Flex>
+                        <Icons />
 
                 </FormControl>
             )}

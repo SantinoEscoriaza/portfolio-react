@@ -2,7 +2,7 @@ import { Box, Flex, Img, Text, Button, Link } from '@chakra-ui/react'
 
 const Hero = () => {
 
-        const curriculumPath = '../../public/files/CurriculumEjemplo.pdf'
+        const curriculumPath = './public/files/CurriculumEjemplo.pdf'
 
     return(
         <Flex as='section' id="inicio" 

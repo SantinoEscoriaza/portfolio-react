@@ -57,23 +57,6 @@ const styles = {
           cursor: 'pointer'
         }
     },
-    '.icons':{
-      w: '100%',
-      p: '30px 0px',
-      display: 'flex',
-      'justify-content': 'center',
-      'align-items': 'center',
-      gap: '30px',
-    },
-    '.icons > a':{
-      color: '#000000',
-      fontSize: '20px',
-      textDecoration: 'none',
-      transition: '0.3s',
-      _hover:{
-        color:'#f92139'
-      }
-    }
 }}
 
 const theme = extendTheme({ config, breakpoints, styles });
