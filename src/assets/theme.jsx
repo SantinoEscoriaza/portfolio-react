@@ -26,7 +26,8 @@ const styles = {
       fontFamily:"system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"
     },
     html:{
-      scrollBehavior:'smooth'
+      scrollBehavior:'smooth',
+      'scroll-padding-top':'60px'
     },
     h2: {
       width: '100%',
