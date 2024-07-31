@@ -24,11 +24,20 @@ const Contact = () => {
         display: 'flex',
         flexDirection: 'column',
         width: '100%',
-        padding: '50px 0',
+        padding: {
+            base:'50px 0', 
+            '2xl':'60px', 
+            '3xl':'70px'
+        },
         bgColor:'#ffffff',
         border: 'solid 1px transparent',
         borderRadius: '2px',
-        fontSize: {base:'16px', md:'20px'},
+        fontSize: {
+            base:'16px', 
+            md:'20px', 
+            '2xl':'24px', 
+            '3xl':'30px'
+        },
         fontWeight: '500',
         transition:'0.3s',
         _hover:{
@@ -38,7 +47,15 @@ const Contact = () => {
     }
 
     const textInput={
-        padding: '20px 15px 20px 15px',
+        padding: {
+            base:'20px 15px', 
+            '2xl':'25px 20px', 
+            '3xl':'30px 25px'
+        },
+        fontSize: {base:'16px', 
+            '2xl':'20px', 
+            '3xl':'28px'
+        },
         border: 'none',
         borderRadius: '0',
         borderBottom: '1px solid black',
@@ -53,8 +70,13 @@ const Contact = () => {
         justify='center'>
             <Text as ='h2' pb='20px'>Ponte En Contacto</Text>
             
-            {/* <!-- BOTONES CONTACTO --> */}
-            <Flex w={{base:'100%', md:'40%'}} 
+            {/* // BOTONES CONTACTO // */}
+            <Flex w={{
+                base:'100%', 
+                md:'40%', 
+                '2xl':'35%', 
+                '3xl':'30%'
+            }}
             direction={{base:'column', mid:'row', md:'column'}}
             h='fit-content'
             align='center' 
@@ -62,7 +84,10 @@ const Contact = () => {
             pr={{base:'0px', md:'16px'}}>
 
                 <Link href="mailto:santinoescoriaza@gmail.com" target="_blank" 
-                w={{base:'80%', mid:'45%', md:'90%'}} 
+                w={{base:'80%', 
+                    mid:'45%', 
+                    md:'90%'
+                }} 
                 _hover={{textDecoration:'none'}}
                 mb='18px'>
                 <Button sx={botonContact}>
@@ -85,7 +110,7 @@ const Contact = () => {
 
              </Flex>
 
-            {/* <!-- FORMULARIO CONTACTO --> */}
+            {/* // FORMULARIO CONTACTO // */}
             {/* ///////////////////// 
                     LEER README 
             ///////////////////// */}

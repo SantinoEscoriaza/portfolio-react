@@ -19,17 +19,36 @@ const ReusableProyect = ({name, desc, url, image}) => {
         }}
         href={url} 
         target="_blank">
+                {/* // CONTENEDOR TEXTO // */}
                 <Box w={{base:'100%', mid:'45%'}} p='15px 15px 20px 25px'>
+
+                    {/* / TITULO / */}
                     <Text as='h3' 
                     color='#000000'  
                     fontWeight='500' 
-                    fontSize='22px' 
+                    fontSize={{base:'22px', '2xl':'28px', '3xl':'36px'}}
                     mb='12px'>
                         {name}
                     </Text>
-                    <Text className="defaultText" fontSize='16px' mb={{base:'20px', lg:'30px', xl:'70px'}}>{desc}</Text>
-                    <Text as='span' textDecoration='underline' textUnderlineOffset='8px' fontWeight='500'>Ver proyecto</Text>
+
+                    {/* / DESCRIPCION / */}
+                    <Text className="defaultText" 
+                    fontSize={{base:'16px', '2xl':'24px', '3xl':'32px'}}
+                     mb={{base:'20px', lg:'30px', xl:'70px', '2xl':'90px', '3xl':'110px'}}>
+                        {desc}
+                    </Text>
+
+                    {/* / VER PROYECTO TEXT / */}
+                    <Text as='span' 
+                    textDecoration='underline' 
+                    fontSize={{base:'16px', '2xl':'24px', '3xl':'32px'}} 
+                    textUnderlineOffset='8px' 
+                    fontWeight='500'>
+                        Ver proyecto
+                    </Text>
+
                 </Box>
+                {/* / IMAGEN / */}
                 <Img src={image}
                 w={{base:'40%', md:'50%'}} h='100%' 
                 display={{base:'none', mid:'block'}}

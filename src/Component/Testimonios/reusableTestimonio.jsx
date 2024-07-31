@@ -35,7 +35,8 @@ const ReusableTestimonio = ({name, image, testimonio}) => {
                 _groupHover={{fontSize:{base:'18px', lg:'20px'}}}>
                     {testimonio}
                 </Text>
-                <Text as='h3' 
+                <Text as='h3'
+                fontSize={{base:'20px', '2xl':'24px', '3xl':'32px'}}
                 fontWeight='500' 
                 textAlign='right' 
                 w='100%'

@@ -6,9 +6,9 @@ const Header = () => {
 
 // Estilos reutilizables para los links, todos comparten los mismos
     const linkStyles = {
-        w:{ base:'30%', lg:'fit-content'},
+        w:{base:'30%', lg:'fit-content'},
         textAlign:'center',
-        fontSize:'18px',
+        fontSize:{base:'18px', '2xl':'22px', '3xl':'28px'},
         textDecoration:'none', 
         transition:'0.2s',
         _hover:{fontWeight:'bold', textDecoration:'underline'}
@@ -21,7 +21,7 @@ const Header = () => {
         position='fixed'
         w='100%'
         zIndex='1'
-        p='16px 0px' 
+        p={{base:'16px 0px', '2xl':'20px 0px', '3xl':'24px 0px'}}
         justify={{base:'space-between', md:'center'}} 
         align='center' 
         bgColor='#000000' 
@@ -29,7 +29,12 @@ const Header = () => {
         color='white'>
             {/* /// LOGO /// */}
             <Link ml='60px' href="#">
-                <Img src='./icons/logoPortfolio.svg' alt="miLogo" w='50px'/>
+                <Img src='./icons/logoPortfolio.svg' alt="miLogo" 
+                w={{
+                    base:'50px', 
+                    '2xl':'60px', 
+                    '3xl':'70px'
+                }}/>
             </Link>
             {/* /// NAVBAR /// */}
             <Flex as='navbar' 
@@ -48,7 +53,9 @@ const Header = () => {
             {/* /// CONTRATAME BUTTON /// */}
             <Button
             display={{ base:'none', md:'block'}}
-            p='8px 36px'
+            p={{base:'8px 36px', '2xl':'10px 36px', '3xl':'12px 36px'}}
+            fontSize={{base:'16px', '2xl':'20px', '3xl':'26px'}}
+            h='fit-content'
             border='1px solid #ffffff'
             borderRadius='2px'
             color='white'

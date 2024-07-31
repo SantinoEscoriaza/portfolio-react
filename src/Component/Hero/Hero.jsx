@@ -14,7 +14,7 @@ const Hero = () => {
                 lg:'60px 120px 20px 120px'
                 }}>
                 <Text as='h1' 
-                fontSize={{base:'28px', sm:'32px', mid:'48px'}} 
+                fontSize={{base:'28px', sm:'32px', mid:'48px', '2xl':'54px', '3xl':'60px'}} 
                 fontWeight='500' 
                 lineHeight={{base:'36px', sm:'48px', mid:'60px'}}>Hola! Soy Santino Escoriaza</Text>
                 <Text className="defaultText">

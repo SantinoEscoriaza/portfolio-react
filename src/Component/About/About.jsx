@@ -16,12 +16,12 @@ const About = () => {
         src="img/imgAbout.jpeg" alt="foto"/>
         <Text className='defaultText' 
         mb={{base:'24px'}}
-        w={{base:'100%',md:'45%'}} 
+        w={{base:'100%',md:'45%', '2xl':'55%', '3xl':'60%'}} 
         p='10px 40px'>
-            <Text mb='16px' lineHeight={{base:'28px', md:'32px'}}>
+            <Text mb='16px' lineHeight={{base:'28px', md:'32px', '2xl':'38px', '3xl':'46px'}}>
                 Tengo 18 años y soy de Argentina. Tengo experiencia en el desarrollo de páginas web. Estudio Ingeniería en sistemas en la Universidad Tecnológica Nacional, y tengo mucho interés en el mundo de la programación y el manejo de datos.
             </Text>
-            <Text display={{base:'none', mid:'block'}} lineHeight='32px'>
+            <Text display={{base:'none', mid:'block'}} lineHeight={{base:'28px', md:'32px', '2xl':'38px', '3xl':'46px'}}>
                 Estoy capacitado en el desarrollo de sitios web desde 0, manejando tecnologias de front-end y back-end que se complementan con el manejo de ciertas herramientas de diseño grafico para poder ofrecer un servicio lo mas completo
             </Text>
         </Text>
